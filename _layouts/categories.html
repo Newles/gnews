@@ -1,0 +1,24 @@
+---
+title: "Categories"
+layout: default
+permalink: /categories.html
+---
+
+<main class="page">
+    <div class="container tag-page">
+
+        {% for category in site.tags %}
+        <h3 class="category-title" id="{{ category[0] | slugify }}">
+            In "{{ category[0] }}"
+        </h3>
+
+        <div class="post-grid">
+            {% assign pages_list = category[1] %}
+            {% for post in pages_list %}
+            {% include post-card.html post=post %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+
+    </div>
+</main>

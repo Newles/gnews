@@ -1,0 +1,122 @@
+// _sass/_dark.scss (dark mode)
+
+html.dark {
+  background: var(--bg);
+  color: var(--text);
+
+  .header {
+    background: rgba(var(--bg), 0.8); // Usa el fondo del skin con transparencia
+    backdrop-filter: blur(8px);
+  }
+
+  // Links del Menú Superior
+  .header nav ul li a {
+    color: var(--primary); // Ahora usarán Cyan, Ruby, etc.
+    &:hover {
+      filter: brightness(1.3);
+    }
+  }
+
+  // Tarjetas, Artículos y Sidebar ahora usan la misma variable de "tarjeta"
+  .post-card,
+  .post-article,
+  .sidebar-box,
+  .card {
+    background: var(--bg-card);
+    border-color: var(--border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .post-body h2 a,
+  .sidebar-post h4,
+  .trending-list a,
+  .footer-nav a,
+  .footer-powered,
+  .author-name,
+  .page-title {
+    color: var(--text);
+  }
+
+  // Links del Footer
+  .footer-nav a,
+  .footer-powered a {
+    color: var(--primary);
+  }
+
+  // El Hero ahora es una versión oscura del color primario
+  .hero {
+    background: var(--bg-card); 
+    border-bottom: 1px solid var(--border);
+    
+    h1, p { color: var(--text); }
+  }
+
+  // Botones y CTAs (Invertimos para que resalten)
+  .btn-primary,
+  .newsletter-form button,
+  .menu__cta,
+  .btn-submit {
+    background: var(--primary);
+    color: #fff; // O el color de texto que prefieras para contraste
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
+  // Inputs y Formularios
+  .newsletter-form input,
+  .contact-form input,
+  .contact-form textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--border);
+    color: var(--text);
+  }
+
+  // Detalles de Post
+  .post-content {
+    blockquote {
+      background: rgba(var(--primary), 0.1);
+      border-left-color: var(--primary);
+      color: var(--text);
+    }
+    code, pre {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--primary); // Toque de color en el código
+    }
+  }
+
+  .post-tags a {
+    background: var(--primary);
+    color: var(--text);
+  }
+
+  .author-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+  }
+
+  // El logo se invierte si es negro, si ya es blanco no hace falta
+  .logo img {
+    filter: invert(1) brightness(2);
+  }
+
+  /* 👇 AÑADE ESTE BLOQUE 👇 */
+  .post-pagination {
+    border-top: 1px solid var(--border); // Opcional: una línea divisoria suave
+    padding-top: 2rem;
+
+    a {
+      color: var(--text); // Usamos el texto principal (blanco/gris claro) del skin
+      
+      &:hover {
+        color: var(--primary); // Opcional: que brille con el color del skin al pasar el mouse
+      }
+    }
+    
+    // Si hay texto decorativo como "« Previous" o "Next »", asegúralo también
+    span {
+        color: var(--muted);
+    }
+  }
+}

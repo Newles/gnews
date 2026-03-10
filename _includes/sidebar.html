@@ -1,0 +1,35 @@
+<div class="sidebar-box">
+    <h3 class="sidebar-title">Featured</h3>
+
+    {% for post in site.posts limit:3 %}
+    <a href="{{ post.url | relative_url }}" class="sidebar-post">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+        <div>
+            <h4>{{ post.title }}</h4>
+            <span>{{ post.date | date: "%d %b %Y" }}</span>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+<div class="sidebar-box">
+    <h3 class="sidebar-title">Newsletter</h3>
+    <p>Get the latest posts delivered right to your inbox.</p>
+
+    <form class="newsletter-form">
+        <input type="email" placeholder="Your email address">
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+
+<div class="sidebar-box">
+    <h3 class="sidebar-title">Trending</h3>
+
+    <ul class="trending-list">
+        {% for post in site.posts limit:5 %}
+        <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

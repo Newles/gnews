@@ -1,0 +1,27 @@
+<article class="post-card">
+    <a href="{{ post.url | relative_url }}" class="post-card-image">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+    </a>
+
+    <div class="post-card-body">
+        <h2 class="post-card-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+
+        <p class="post-card-excerpt">
+            {{ post.excerpt | strip_html | truncate: 130 }}
+        </p>
+
+        {% if post.author and site.authors[post.author] %}
+        <div class="post-card-meta">
+            By <a href="{{ '/author/' | append: post.author | relative_url }}">{{ site.authors[post.author].display_name
+                }}</a>,
+            on {{ post.date | date: "%d %b %Y" }}
+        </div>
+        {% else %}
+        <div class="post-card-meta">
+            By Anonymous, on {{ post.date | date: "%d %b %Y" }}
+        </div>
+        {% endif %}
+    </div>
+</article>

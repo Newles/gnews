@@ -1,0 +1,18 @@
+main:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
+  - title: Get this theme
+    url: https://tu-demo.com
+    external: true
+
+footer:
+  - title: Home
+    url: /
+  - title: Privacy Policy
+    url: /privacy/
+  - title: Contact
+    url: /contact/

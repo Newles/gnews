@@ -1,0 +1,31 @@
+// _sass/_tokens.scss (variables)
+
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+:root {
+  /* skinks */
+  --primary: #8a2be2;
+  --accent: #6a0dad;
+
+  --container: 1200px;
+  --radius: 24px;
+
+  --bg: #f8f4ff;
+  --bg-card: #ffff;
+  --text: #1a1a1a;
+  --muted: #666666;
+  --border: #e5e7eb;
+  --yellowtail: 'Yellowtail', cursive;
+}
+
+html.dark {
+  --bg: #120a1d;
+  --bg-card: #1c112b;
+  --text: #ffffff;
+  --muted: #1a1a1a;
+  --border: #1f2933;
+
+    /* Ajuste ligero al color primario para que brille más en fondo oscuro */
+  --primary: #a154f2;
+}
+

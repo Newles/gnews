@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<main class="page">
+    <div class="container author-page">
+
+        {% assign author = site.authors[page.author] %}
+
+        <header class="author-header">
+            <img class="author-avatar" src="{{ author.avatar | relative_url }}" alt="{{ author.display_name }}">
+            <h1 class="author-name">{{ author.display_name }}</h1>
+            <p class="author-bio">{{ author.description }}</p>
+
+            <div class="author-links">
+                {% if author.web %}
+                <a href="{{ author.web }}" target="_blank">Website</a>
+                {% endif %}
+                {% if author.twitter %}
+                <a href="{{ author.twitter }}" target="_blank">Twitter</a>
+                {% endif %}
+                {% if author.email %}
+                <a href="mailto:{{ author.email }}">Email</a>
+                {% endif %}
+            </div>
+        </header>
+
+        <section class="post-grid">
+            {% for post in site.posts %}
+            {% if post.author == page.author %}
+            {% include post-card.html post=post %}
+            {% endif %}
+            {% endfor %}
+        </section>
+
+    </div>
+</main>

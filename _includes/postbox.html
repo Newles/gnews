@@ -1,0 +1,32 @@
+<section id="posts" class="posts">
+    <div class="container">
+        <div class="posts-grid">
+            {% for post in site.posts limit:6 %}
+            <article class="post-card">
+                <a href="{{ post.url | relative_url }}" class="post-image">
+                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+                </a>
+
+                <div class="post-body">
+                    <span class="post-category">{{ post.category }}</span>
+                    <h2>
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </h2>
+                    <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+                    {% if post.author and site.authors[post.author] %}
+                    <div class="post-meta">
+                        By <a href="{{ '/author/' | append: post.author | relative_url }}"><strong>{{ post.author |
+                                default: site.author }}</strong></a>,
+                        on {{ post.date | date: "%d %b %Y" }}
+                    </div>
+                    {% else %}
+                    <div class="post-meta">
+                        By Anonymous, on {{ post.date | date: "%d %b %Y" }}
+                    </div>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

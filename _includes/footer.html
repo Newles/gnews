@@ -1,0 +1,25 @@
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-powered">
+            Powered by <a href="#" target="_blank">"Gnews"</a><span>- Free Theme</span>
+        </div>
+
+        <nav class="footer-nav">
+            {% for item in site.data.menu.footer %}
+            {% if item.external %}
+            <a href="{{ item.url }}" target="_blank" rel="noopener">
+                {{ item.title }}
+            </a>
+            {% else %}
+            <a href="{{ item.url | relative_url }}">
+                {{ item.title }}
+            </a>
+            {% endif %}
+            {% endfor %}
+        </nav>
+
+        <div class="footer-copy">
+            Copyright © {{ "now" | date: "%Y" }} {{ site.title }} — All rights reserved.
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,121 @@
+@media (max-width: 1024px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .posts-grid {
+    grid-template-columns: 1fr; // 1 columna en móvil
+  }
+
+  .page-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    margin-top: 60px;
+    order: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-nav {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-form {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header { 
+    background: var(--bg) !important;
+
+    &__inner {
+      flex-wrap: wrap;
+      height: 80px;
+      padding: 0 1rem;
+      align-content: flex-start; /* Alinea el contenido al inicio (arriba) */
+      transition: height 0.3s ease;
+    }
+
+    /* 🔥 El efecto de encogimiento en móvil */
+    &.shrink {
+      .header__inner {
+        height: 64px; /* Altura reducida al hacer scroll en móvil */
+      }
+    }
+
+    &.open {
+      .header__inner {
+        height: auto; 
+      }
+    }
+  
+  }
+
+  /* 🔥 1 header-left se queda normal */
+  .header-left {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: height 0.3s ease;
+  }
+
+  /* Ajuste de altura para el logo cuando hay scroll */
+  .header.shrink .header-left {
+    height: 64px; 
+  }
+
+  /* 🔥 2 toggle visible */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+  }
+
+  /* 🔥 3 header-right baja a nueva fila */
+  .header-right {
+    width: calc(100% + 2rem);
+    margin: 0 -1rem;
+    max-height: 0;
+    overflow: hidden;
+    background: var(--bg); 
+    flex-direction: column;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-right.open {
+    max-height: 100vh;
+    padding: 2rem 0;
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.05);
+  }
+
+  /* menú vertical centrado */
+  nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .header-right nav a {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
