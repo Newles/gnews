@@ -43,10 +43,9 @@ layout: default
 
             {% include author.html %}
 
-            {% if site.disqus %}
-            <div class="post-comments">
-                {% include disqus.html %}
-            </div>
+            {% include share-buttons.html %}
+            {% if page.comments != false %}
+            {% include comments.html %}
             {% endif %}
         </article>
 

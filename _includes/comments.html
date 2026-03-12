@@ -1,0 +1,17 @@
+{% if site.comments.provider %}
+<section class="post-comments">
+    <hr>
+    <h3>Comentarios</h3>
+
+    {% case site.comments.provider %}
+    {% when "disqus" %}
+    {% include comments-providers/disqus.html %}
+    {% when "giscus" %}
+    {% include comments-providers/giscus.html %}
+    {% when "cusdis" %}
+    {% include comments-providers/cusdis.html %}
+    {% else %}
+    <p>Sistema de comentarios no configurado correctamente.</p>
+    {% endcase %}
+</section>
+{% endif %}

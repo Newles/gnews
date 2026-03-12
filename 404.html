@@ -1,0 +1,36 @@
+---
+layout: page
+title: 404 Not Found
+permalink: /404.html
+---
+
+<div class="error-page">
+    <div class="container">
+        <div class="error-content">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">¡Ups! Perdimos la primicia</h2>
+            <p class="error-message">
+                Parece que la noticia que buscas ha sido retirada de nuestra redacción o nunca existió.
+                No te preocupes, puedes volver a la portada para ver lo más reciente.
+            </p>
+            <div class="error-actions">
+                <a href="{{ '/' | relative_url }}" class="btn btn-primary">Volver al Inicio</a>
+                <button onclick="window.history.back()" class="btn btn-outline">Regresar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="error-suggestions container">
+    <h3>Quizás te interese leer esto:</h3>
+    <div class="post-grid">
+        {% for post in site.posts limit:3 %}
+        <article class="post-card">
+            <a href="{{ post.url | relative_url }}">
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+                <h4>{{ post.title }}</h4>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+</div>

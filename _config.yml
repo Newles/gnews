@@ -7,7 +7,6 @@ logo: 'assets/img/logo.png'
 favicon: 'assets/img/favicon.ico'
 author: Sal
 paginate: 30
-disqus: 'demowebsite'
 locale: en_us
 lang: en_us
 feed_items: 10
@@ -46,6 +45,25 @@ social:
   instagram: https://www.instagram.com/
   facebook: https://www.facebook.com/
   twitter: https://twitter.com/
+
+# Comments provider
+comments:
+  provider: "disqus" # Options: disqus, giscus, cusdis, false (deactivate)
+  
+  disqus:
+    shortname: "demowebsite"
+    
+  giscus:
+    repo: "usuario/repositorio" #Your Repository
+    repo_id: "R_12345"
+    category: "Announcements"
+    category_id: "DIC_67890"
+    mapping: "pathname"
+    theme: "light" # Dark mode sync
+    
+  cusdis:
+    app_id: "tu-app-id-de-cusdis" #Your app ID
+
 
 # Plugins
 plugins: 

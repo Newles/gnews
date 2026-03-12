@@ -1,0 +1,26 @@
+{% if page.share %}
+<div class="share-box">
+    <h4>Compartir esta noticia</h4>
+    <div class="share-links">
+        <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url }}"
+            target="_blank" rel="nofollow" title="Compartir en X">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank"
+            rel="nofollow" title="Compartir en Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}"
+            target="_blank" rel="nofollow" title="Compartir en LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://api.whatsapp.com/send?text={{ page.title | url_encode }}%20{{ site.url }}{{ page.url }}"
+            target="_blank" rel="nofollow" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</div>
+{% endif %}

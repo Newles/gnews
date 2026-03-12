@@ -4,7 +4,7 @@
 <div class="author-box">
     <img src="{{ author.avatar | relative_url }}" alt="{{ author.display_name }}">
     <div class="author-meta">
-        <a href="{{ '/author/' | append: post.author | relative_url }}"><strong>{{ author.display_name }}</strong></a>
+        <a href="{{ '/author/' | append: page.author | relative_url }}"><strong>{{ author.display_name }}</strong></a>
         <p>{{ author.description }}</p>
 
         <div class="author-links">
