@@ -3,8 +3,8 @@ email: wowthemesnet@gmail.com
 timezone: UTC
 baseurl: ""
 permalink: "/:title/"
-logo: 'assets/img/logo.png'
-favicon: 'assets/img/favicon.ico'
+logo: 'assets/icon/logo.png'
+favicon: 'assets/favicon/favicon.ico'
 author: Sal
 paginate: 30
 locale: en_us
