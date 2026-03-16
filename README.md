@@ -31,6 +31,71 @@ Obtén **Gnews Premium** para acceder a:
 | ![Dark Mode](assets/screenshots/Desktop/home_page_dark_mode.png) | ![Móvil](assets/screenshots/Movil/home_page_small.png) |
 | *Interfaz adaptativa en modo noche* | *Diseño responsive a una sola columna* |
 
+### 🌗 Alterna entre modo dia y noche 
+| Modo Claro | Modo Oscuro |
+|:---:|:---:|
+| ![Modo dia](assets/screenshots/Desktop/home_page.png) | ![Modo Noche](assets/screenshots/Desktop/categories_page_dark_mode.png) |
+| *Interfaz fluida y minimalista* | *Diseño nocturno adaptable* |
+
+## 😱 Comparativa con el modo sencillo y premium
+
+**Aunque**, este tema fue hecho princialmente para una pagina de contenido de infomacion perosnal que estaba por montar decidi minimizar las implementaciones para dar una version mas ligera y menos cargada de codigo para la perosna que desee hacer uso del mismo pero no deje la posibilidad que veas un poco de lo que llegue hacer con este tema y si queires obtener todas sus funciones deje una version full cargada de los siguientes anadidos
+
+## 😱 Comparativa: Free vs Premium
+
+| Característica | Gnews Free | Gnews Premium |
+| :--- | :---: | :---: |
+| **Diseño Responsive** | ✅ | ✅ |
+| **Modo Oscuro Manual** | ✅ | ✅ |
+| **Optimización SEO** | ✅ | ✅ |
+| **Soporte PWA** | ✅ | ✅ |
+| **Botones compartir** | ✅ | ✅ |
+| **Esquemas de colores** | 1 (Purple) | 5 (Multicolor) |
+| **Búsqueda en Tiempo Real** | ❌ | ✅ |
+| **Temas dinámicos en Comentarios** | ❌ | ✅ |
+| **Espacios Publicitarios (ADS)** | ❌ | ✅ |
+| **Barra de lectura Pro** | ❌ | ✅ |
+| **Soporte Prioritario** | ❌ | ✅ |
+
+---
+
+> 🚀 **¿Listo para el siguiente nivel?**
+> [Adquirir Gnews Premium ahora](TU_ENLACE_AQUI)
+
+## 🐨🐨 Imagenes comparativas y animaciones
+
+A continuación puedes ver en acción algunas de las funciones principales y la fluidez de la interfaz.
+
+### 🔍 Búsqueda en Tiempo Real (Versión Premium)
+Con la versión Premium, los usuarios pueden encontrar contenido instantáneamente sin recargar la página.
+
+<p align="center">
+  <video src="assets/screenshots/record/realtimesearch.webm" autoplay loop muted playsinline width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></video>
+  <br>
+  <em>Demostración de la búsqueda inteligente y filtrado dinámico.</em>
+</p>
+
+### 🌓 Cambio de Modo y Diseño Skins
+Compara cómo se adapta visualmente el tema al cambiar entre el modo claro y oscuro.
+
+| Vista General (Día) Purple | Vista General (Noche) Purple |
+|:---:|:---:|
+| ![Modo Claro](assets/screenshots/Desktop/home_page.png) | ![Modo Oscuro](assets/screenshots/Desktop/home_page_dark_mode.png) |
+
+Compara los esquemas de colores disponibles para ti en la version premium
+
+| Vista General (Día) Ruby | Vista General (Noche) Ruby |
+|:---:|:---:|
+| ![Modo Claro](assets/screenshots/Desktop/ruby/home_page_ruby.png) | ![Modo Oscuro](assets/screenshots/Desktop/ruby/home_page_ruby_dark_mode.png) |
+
+| Vista General (Día) Coffee | Vista General (Noche) Coffe |
+|:---:|:---:|
+| ![Modo Claro](assets/screenshots/Desktop/coffee/home_page_coffee.png) | ![Modo Oscuro](assets/screenshots/Desktop/coffee/home_page_coffee_dark_mode.png) |
+
+| Vista General (Día) Cyan | Vista General (Noche) Cyan |
+|:---:|:---:|
+| ![Modo Claro](assets/screenshots/Desktop/cyan/home_page_cyan.png) | ![Modo Oscuro](assets/screenshots/Desktop/cyan/home_page_cyan_dark_mode.png) |
+
 ## 🚀 Modo de uso
 
 ### 🛠️ Requisitos previos
