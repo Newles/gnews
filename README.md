@@ -66,14 +66,21 @@ Obtén **Gnews Premium** para acceder a:
 
 A continuación puedes ver en acción algunas de las funciones principales y la fluidez de la interfaz.
 
+### 🌏 HOME PAGE (Diseno)
+Muestra de la inetrfaz y su funcionamiento en mabas versiones con diseno minimalista inspirado en el tema Affiliates pero a mi gusto sin usar Bootstrap solo SCSS y HTML puro (los espacios publicitarios solo se pueden agregar en a version premium del mismo).
+
+![HOME PAGE](assets/screenshots/gif/homepage.gif)
+
+### 📲 Adpatabilidad (Versión Movil)
+Con los estandares de diseno responsivo de los ultimos tiempos se agrego la funcionalidad de adaptabilidad a diferentes tamanos de pantalla.
+
+![Movil](assets/screenshots/gif/movil.gif)
+
 ### 🔍 Búsqueda en Tiempo Real (Versión Premium)
 Con la versión Premium, los usuarios pueden encontrar contenido instantáneamente sin recargar la página.
 
-<p align="center">
-  <video src="assets/screenshots/record/realtimesearch.webm" autoplay loop muted playsinline width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></video>
-  <br>
-  <em>Demostración de la búsqueda inteligente y filtrado dinámico.</em>
-</p>
+![Real Time Search](assets/screenshots/gif/realtimesearch.gif)
+
 
 ### 🌓 Cambio de Modo y Diseño Skins
 Compara cómo se adapta visualmente el tema al cambiar entre el modo claro y oscuro.
@@ -143,7 +150,8 @@ Jekyll es un generador de sitios estáticos. El proceso de "compilación" sigue 
 3.  **Conversión:** Transforma el Markdown en HTML y el SASS en CSS plano.
 4.  **Salida:** Todo se deposita en la carpeta `_site/`.
 
-[Enlace a tu versión premium o tienda]
+> 🚀 **¿Listo para el siguiente nivel?**
+> [Adquirir Gnews Premium ahora](TU_ENLACE_AQUI)
 
 ## 📄 Licencia
 Este tema es de código abierto bajo la licencia MIT.
