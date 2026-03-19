@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Markdown Example"
-author: john
 tags: [ Jekyll, tutorial ]
 image: assets/img/6.jpg
 share: true

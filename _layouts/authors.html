@@ -7,6 +7,7 @@ layout: default
 
         {% assign author = site.authors[page.author] %}
 
+        {% if author %}
         <header class="author-header">
             <img class="author-avatar" src="{{ author.avatar | relative_url }}" alt="{{ author.display_name }}">
             <h1 class="author-name">{{ author.display_name }}</h1>
@@ -23,6 +24,7 @@ layout: default
                 <a href="mailto:{{ author.email }}">Email</a>
                 {% endif %}
             </div>
+            <h2 class="section-title">Publicaciones de {{ author.display_name }}</h2>
         </header>
 
         <section class="post-grid">
@@ -32,6 +34,12 @@ layout: default
             {% endif %}
             {% endfor %}
         </section>
-
+        {% else %}
+        <div class="error-author">
+            <h2>Autor no encontrado</h2>
+            <p>Lo sentimos, no pudimos encontrar informacion de este colaborador.</p>
+            <a href="{{ '/' | relative_url }}">Volver al Inicio</a>
+        </div>
+        {% endif %}
     </div>
 </main>

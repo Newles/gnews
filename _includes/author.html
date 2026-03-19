@@ -19,5 +19,14 @@
     </div>
 </div>
 {% else %}
-Anonymous
+<div class="author-box author-box-anonymous">
+    <img src="{{ '/assets/avatar/anonimus.png' | relative_url }}" alt="Anonymous User">
+
+    <div class="author-meta">
+        <span class="anonymous-title"><strong>Usuario Anónimo</strong></span>
+
+        <p>Este artículo ha sido publicado por un autor invitado o de forma anónima.</p>
+
+    </div>
+</div>
 {% endif %}

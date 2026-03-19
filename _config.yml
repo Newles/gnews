@@ -16,6 +16,7 @@ lang: es_es
 # -----------------------
 logo: 'assets/icon/logo.png'
 favicon: 'assets/favicon/favicon.ico'
+hero: 'assets/img/intro.svg'
 skin: "purple" # En la versión Free, solo este skin está disponible por defecto.
 
 # -----------------------
@@ -30,7 +31,7 @@ search_placeholder: "Buscar..."
 comments:
   provider: "disqus" # Opciones: disqus, giscus, cusdis, false
   disqus:
-    shortname: "tu-shortname-de-disqus"
+    shortname: "demowebsite"
   giscus:
     repo: "usuario/repositorio"
     repo_id: "R_..."
@@ -46,7 +47,7 @@ authors:
   fred:
     name: Fred
     display_name: Fred
-    avatar: 'assets/img/fred.png'
+    avatar: 'assets/avatar/fred.png'
     email: tu-correo@ejemplo.com
     web: https://tusitio.com
     twitter: https://twitter.com/tu_usuario

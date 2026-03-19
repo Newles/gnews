@@ -17,10 +17,12 @@
             <i class="fab fa-linkedin-in"></i>
         </a>
 
+        {% if site.social.whatsapp == true %}
         <a href="https://api.whatsapp.com/send?text={{ page.title | url_encode }}%20{{ site.url }}{{ page.url }}"
             target="_blank" rel="nofollow" class="whatsapp-btn">
             <i class="fab fa-whatsapp"></i>
         </a>
+        {% endif %}
     </div>
 </div>
 {% endif %}

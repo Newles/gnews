@@ -173,6 +173,20 @@
   }
 }
 
+/* Estilos extra para autor anónimo */
+.author-box-anonymous {
+    border-color: #eee; // Un borde más suave
+    background-color: #fafafa; // Un fondo muy ligero
+    
+    .anonymous-title {
+        color: #666; // Gris más oscuro, no es un enlace
+        font-size: 1.1em;
+    }
+    
+    img {
+        opacity: 0.8; // Un efecto sutil para la imagen genérica
+    }
+}
 
 .post-grid {
   display: grid;
