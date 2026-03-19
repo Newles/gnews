@@ -1,73 +1,80 @@
-title: "Gnews Free" #Free version
-email: wowthemesnet@gmail.com
+# -----------------------
+# 📑 Configuración General (Versión Free)
+# -----------------------
+title: "Gnews Free"
+email: tu-correo@ejemplo.com
 timezone: UTC
-baseurl: ""
+baseurl: "" # Si usas GitHub Pages, pon aquí el nombre de tu repo: "/gnews-free"
 permalink: "/:title/"
+author: Fred
+paginate: 30
+locale: es_es
+lang: es_es
+
+# -----------------------
+# 🎨 Identidad y Skins
+# -----------------------
 logo: 'assets/icon/logo.png'
 favicon: 'assets/favicon/favicon.ico'
-author: Sal
-paginate: 30
-locale: en_us
-lang: en_us
-feed_items: 10
-feed_update_period: daily
-feed_update_frequency: 1
-markdown: kramdown
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-sass:
-  sass_dir: _sass
-  style: :compressed
-ganalytics: UA-113961478-1
+skin: "purple" # En la versión Free, solo este skin está disponible por defecto.
 
-# Authors
+# -----------------------
+# 🔍 Funciones (Limitadas en Free)
+# -----------------------
+search_enabled: false # La búsqueda en tiempo real es una función Premium.
+search_placeholder: "Buscar..."
+
+# -----------------------
+# 💬 Comentarios
+# -----------------------
+comments:
+  provider: "disqus" # Opciones: disqus, giscus, cusdis, false
+  disqus:
+    shortname: "tu-shortname-de-disqus"
+  giscus:
+    repo: "usuario/repositorio"
+    repo_id: "R_..."
+    category: "Announcements"
+    category_id: "DIC_..."
+    mapping: "pathname"
+    theme: "light"
+
+# -----------------------
+# 👥 Autores
+# -----------------------
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
-    avatar: 'assets/img/sal.png'
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net/category/jekyll-themes/
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Affiliates, a template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
-    name: John
-    display_name: John
-    avatar: 'assets/img/john.png'
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net/category/jekyll-themes/
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
+  fred:
+    name: Fred
+    display_name: Fred
+    avatar: 'assets/img/fred.png'
+    email: tu-correo@ejemplo.com
+    web: https://tusitio.com
+    twitter: https://twitter.com/tu_usuario
+    description: "Creador de Gnews. Disfruta de esta versión gratuita y minimalista para tu blog de noticias."
 
-# Social
+# -----------------------
+# 📱 Redes Sociales
+# -----------------------
 social:
   instagram: https://www.instagram.com/
   facebook: https://www.facebook.com/
   twitter: https://twitter.com/
+  whatsapp: false # Desactivado por defecto en la versión Free
 
-# Comments provider
-comments:
-  provider: "disqus" # Options: disqus, giscus, cusdis, false (deactivate)
-  
-  disqus:
-    shortname: "demowebsite"
-    
-  giscus:
-    repo: "usuario/repositorio" #Your Repository
-    repo_id: "R_12345"
-    category: "Announcements"
-    category_id: "DIC_67890"
-    mapping: "pathname"
-    theme: "light" # Dark mode sync
-    
-  cusdis:
-    app_id: "tu-app-id-de-cusdis" #Your app ID
+# -----------------------
+# ⚙️ Configuraciones Técnicas
+# -----------------------
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true # En la versión Free se mantiene simple
+sass:
+  sass_dir: _sass
+  style: :compressed
 
-
-# Plugins
 plugins: 
-- jekyll-paginate
-- jekyll-sitemap
-- jekyll-feed
-- jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  # Nota: jekyll-archives no suele estar en la Free para mantener ligereza
