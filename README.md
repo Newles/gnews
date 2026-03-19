@@ -2,6 +2,10 @@
 
 Gnews es un tema minimalista y rápido para blogs de noticias. Esta versión gratuita incluye el esquema de color **Purple** por defecto.
 
+> 🚀 **¿Probar DEMO?**
+> [FREE](https://newles.github.io/gnews-free-demo/)
+> [PREMIUM](https://newles.github.io/gnews-premium-demo/)
+
 ## ✨ Características
 - Diseño responsive.
 - Modo oscuro manual.
@@ -102,6 +106,10 @@ Compara los esquemas de colores disponibles para ti en la version premium
 | Vista General (Día) Cyan | Vista General (Noche) Cyan |
 |:---:|:---:|
 | ![Modo Claro](assets/screenshots/Desktop/cyan/home_page_cyan.png) | ![Modo Oscuro](assets/screenshots/Desktop/cyan/home_page_cyan_dark_mode.png) |
+
+> 🚀 **¿Probar DEMO?**
+> [FREE](https://newles.github.io/gnews-free-demo/)
+> [PREMIUM](https://newles.github.io/gnews-premium-demo/)
 
 ## 🚀 Modo de uso
 

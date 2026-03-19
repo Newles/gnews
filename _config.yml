@@ -4,7 +4,8 @@
 title: "Gnews Free"
 email: tu-correo@ejemplo.com
 timezone: UTC
-baseurl: "" # Si usas GitHub Pages, pon aquí el nombre de tu repo: "/gnews-free"
+baseurl: "/gnews-free-demo" # Si usas GitHub Pages, pon aquí el nombre de tu repo: "/gnews-free"
+url: "https://Newles.github.io"
 permalink: "/:title/"
 author: Fred
 paginate: 30
